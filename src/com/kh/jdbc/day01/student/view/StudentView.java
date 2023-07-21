@@ -23,7 +23,11 @@ public class StudentView {
 			switch(choice) {
 				case 1 : 
 					sList = ctrl.printStudentList();
-					showAllStudent(sList);
+					if(!sList.isEmpty()) {
+						showAllStudent(sList);
+					}else {
+						displayError("학생 정보가 조회되지 않습니다.");
+					}
 					break;
 					
 				case 2 : 
@@ -32,7 +36,11 @@ public class StudentView {
 					// printStudentById() 메소드가 학생 정보를 조회, dao의 메소드는 selectOneById()로 명명
 					student = ctrl.printStudentById(studentId);
 					// showStudent() 메소드로 학생 정보를 출력
-					showStudent(student);
+					if(student != null) {
+						showStudent(student);
+					} else {
+						displayError("학생 정보가 존재하지 않습니다.");
+					}
 					break;
 					
 				case 3 : 
@@ -42,7 +50,11 @@ public class StudentView {
 					// selectOneByName, selectAllbyName
 					sList = ctrl.printStudentsByName(studentName);
 					// showStudent, showAllStudents
-					showAllStudnets(sList);
+					if(!sList.isEmpty()) {
+						showAllStudnets(sList);
+					} else {
+						displayError("학생 정보가 조회되지 않습니다.");
+					}
 					break;
 				
 				case 4 : 
@@ -52,7 +64,6 @@ public class StudentView {
 					student = inputStudent();
 					int result = ctrl.insertStudent(student);
 					if(result > 0) {
-						
 						// 성공 메시지 출력
 						displaySuccess("학생 정보 등록 성공");
 					}else {
