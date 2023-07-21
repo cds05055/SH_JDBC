@@ -17,7 +17,6 @@ public class Student {
 	public Student() {}
 	public Student(String studentId, String studentPwd, String studentName, char gender, int age, String email,
 			String phone, String address, String hobby, Date enrollDate) {
-		super();
 		this.studentId = studentId;
 		this.studentPwd = studentPwd;
 		this.studentName = studentName;
@@ -29,6 +28,29 @@ public class Student {
 		this.hobby = hobby;
 		this.enrollDate = enrollDate;
 	}
+	
+
+	public Student(String studentId, String studentPwd, String email, String phone, String address, String hobby) {
+		this.studentId = studentId;
+		this.studentPwd = studentPwd;
+		this.email = email;
+		this.phone = phone;
+		this.address = address;
+		this.hobby = hobby;
+	}
+	public Student(String studentId, String studentPwd, String studentName, char gender, int age, String email,
+			String phone, String address, String hobby) {
+		this.studentId = studentId;
+		this.studentPwd = studentPwd;
+		this.studentName = studentName;
+		this.gender = gender;
+		this.age = age;
+		this.email = email;
+		this.phone = phone;
+		this.address = address;
+		this.hobby = hobby;
+	}
+	
 	public String getStudentId() {
 		return studentId;
 	}

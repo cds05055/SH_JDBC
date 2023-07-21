@@ -18,4 +18,29 @@ public class StudentController {
 		return sList;
 	}
 
+	public List<Student> printStudentsByName(String studentName) {
+		List<Student> sList = studentDao.selectAllbyName(studentName);
+		return sList;
+	}
+
+	public Student printStudentById(String studentId) {
+		Student student = studentDao.selectOneById(studentId);
+		return student;
+	}
+
+	public int insertStudent(Student student) {
+		int result = studentDao.insertStudent(student);
+		return result;
+	}
+
+	public int deleteStudent(String studentId) {
+		int result  = studentDao.deleteStudent(studentId);
+		return result;
+	}
+
+	public int modifyStudent(Student student) {
+		int result = studentDao.updateStudent(student);
+		return result;
+	}
+
 }
