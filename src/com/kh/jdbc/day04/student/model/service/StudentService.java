@@ -1,11 +1,11 @@
-package com.kh.jdbc.day04.model.service;
+package com.kh.jdbc.day04.student.model.service;
 
 import java.sql.Connection;
 import java.util.List;
 
-import com.kh.jdbc.day04.common.JDBCTemplate;
-import com.kh.jdbc.day04.model.dao.StudentDAO;
-import com.kh.jdbc.day04.model.vo.Student;
+import com.kh.jdbc.day04.student.common.JDBCTemplate;
+import com.kh.jdbc.day04.student.model.dao.StudentDAO;
+import com.kh.jdbc.day04.student.model.vo.Student;
 
 public class StudentService {
 	private StudentDAO studentDao;

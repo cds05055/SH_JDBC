@@ -1,10 +1,10 @@
-package com.kh.jdbc.day04.view;
+package com.kh.jdbc.day04.student.view;
 
 import java.util.List;
 import java.util.Scanner;
 
-import com.kh.jdbc.day04.controller.StudentController;
-import com.kh.jdbc.day04.model.vo.Student;
+import com.kh.jdbc.day04.student.controller.StudentController;
+import com.kh.jdbc.day04.student.model.vo.Student;
 
 public class StudentView {
 	private StudentController ctrl;

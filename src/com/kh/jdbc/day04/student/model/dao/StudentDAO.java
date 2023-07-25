@@ -1,4 +1,4 @@
-package com.kh.jdbc.day04.model.dao;
+package com.kh.jdbc.day04.student.model.dao;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import com.kh.jdbc.day04.model.vo.Student;
+import com.kh.jdbc.day04.student.model.vo.Student;
 
 public class StudentDAO {
 	/*

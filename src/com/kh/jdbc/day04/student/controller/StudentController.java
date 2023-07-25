@@ -1,9 +1,9 @@
-package com.kh.jdbc.day04.controller;
+package com.kh.jdbc.day04.student.controller;
 
 import java.util.List;
 
-import com.kh.jdbc.day04.model.service.StudentService;
-import com.kh.jdbc.day04.model.vo.Student;
+import com.kh.jdbc.day04.student.model.service.StudentService;
+import com.kh.jdbc.day04.student.model.vo.Student;
 
 public class StudentController {
 	private StudentService sService;

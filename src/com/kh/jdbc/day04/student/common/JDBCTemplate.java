@@ -1,4 +1,4 @@
-package com.kh.jdbc.day04.common;
+package com.kh.jdbc.day04.student.common;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
